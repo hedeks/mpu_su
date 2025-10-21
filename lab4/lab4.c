@@ -47,24 +47,24 @@ void dash(){
 }
 
 /*
-	Purpose: Morse code representation of word "√ŒÀ» " (GOLIK)
+	Purpose: Morse code representation of word "√É√é√ã√à√ä" (GOLIK)
 	Encoding:
 		0 = dot (short signal)
 		1 = dash (long signal) 
 		2 = inter-letter pause (1000ms)
 	Word breakdown:
-		√: --.    (1,1,0)
-		Œ: ---    (1,1,1)
-		À: .-..   (0,1,0,0)
-		»: ..     (0,0)
-		 : -.-    (1,0,1)
+		–ì: --.    (1,1,0)
+		–û: ---    (1,1,1)
+		–õ: .-..   (0,1,0,0)
+		–ò: ..     (0,0)
+		–ö: -.-    (1,0,1)
 */
 uint8_t word[] = {
-	/* √ */	1,1,0, 2, 	// dash, dash, dot, pause
-	/* Œ */	1,1,1, 2, 	// dash, dash, dash, pause  
-	/* À */	0,1,0,0, 2, // dot, dash, dot, dot, pause
-	/* » */	0,0, 2, 	// dot, dot, pause
-	/*   */	1,0,1 		// dash, dot, dash
+	/* –ì */	1,1,0, 2, 	// dash, dash, dot, pause
+	/* –û */	1,1,1, 2, 	// dash, dash, dash, pause  
+	/* –õ */	0,1,0,0, 2, // dot, dash, dot, dot, pause
+	/* –ò */	0,0, 2, 	// dot, dot, pause
+	/* –ö */	1,0,1 		// dash, dot, dash
 };
 
 /*
@@ -96,4 +96,5 @@ int main(void)
 		}
 		_delay_ms(5000); 	// pause between word repetitions (5000ms)
 	}
+
 }
