@@ -1,4 +1,4 @@
-#define F_CPU 1000000UL
+#define F_CPU 11059200UL
 
 #include <avr/io.h>
 #include <util/delay.h>
@@ -149,3 +149,4 @@ int main(void)
 		} while (key == nkey);
 	}
 }
+
