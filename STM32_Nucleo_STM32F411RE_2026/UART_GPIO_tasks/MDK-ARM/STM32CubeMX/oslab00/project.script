@@ -1,0 +1,5 @@
+load STM32F411RETx
+project name STM32CubeMX
+project toolchain "MDK-ARM V5"
+project path "C:\RTOS\labs\test_labs\lab01\oslab00\MDK-ARM\STM32CubeMX\oslab00"
+SetCopyLibrary "copy only"

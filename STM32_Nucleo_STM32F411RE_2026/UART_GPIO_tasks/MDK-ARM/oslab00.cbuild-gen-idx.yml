@@ -1,0 +1,13 @@
+build-gen-idx:
+  generated-by: uVision version 5.43.1.0
+  generators:
+    - board: 
+      device: STM32F411RETx
+      id: CubeMX
+      output: C:/RTOS/labs/test_labs/lab01/oslab00/MDK-ARM/STM32CubeMX/oslab00/
+      project-type: single-core
+      cbuild-gens:
+        - cbuild-gen: C:/RTOS/labs/test_labs/lab01/oslab00/MDK-ARM/oslab00.oslab00.cbuild-gen.yml
+          configuration: .oslab00
+          name: C:/RTOS/labs/test_labs/lab01/oslab00/MDK-ARM/STM32CubeMX/oslab00/oslab00.cgen.yml
+          project: oslab00

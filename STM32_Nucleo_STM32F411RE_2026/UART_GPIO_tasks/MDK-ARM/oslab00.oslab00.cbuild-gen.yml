@@ -1,0 +1,74 @@
+build-gen:
+  board: 
+  compiler: AC6
+  device: STM32F411RETx
+  generated-by: uVision version 5.43.1.0
+  processor:
+    core: Cortex-M4
+    dsp: off
+    endian: little
+    fpu: sp
+    trustzone: non-secure
+  add-path:
+    - C:/RTOS/labs/test_labs/lab01/oslab00/Inc
+    - C:/RTOS/labs/test_labs/lab01/oslab00/Drivers/STM32F4xx_HAL_Driver/Inc
+    - C:/RTOS/labs/test_labs/lab01/oslab00/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy
+    - C:/RTOS/labs/test_labs/lab01/oslab00/Drivers/CMSIS/Device/ST/STM32F4xx/Include
+    - C:/RTOS/labs/test_labs/lab01/oslab00/Drivers/CMSIS/Include
+  components:
+    - component: ARM::CMSIS:CORE@6.2.0
+      from-pack: ARM::CMSIS@6.3.0
+  apis: 
+  groups:
+    - group: Application/MDK-ARM
+      files:
+        - file: C:/RTOS/labs/test_labs/lab01/oslab00/MDK-ARM/startup_stm32f411xe.s
+          category: sourceAsm
+    - group: Application/User
+      files:
+        - file: C:/RTOS/labs/test_labs/lab01/oslab00/Src/main.c
+          category: sourceC
+        - file: C:/RTOS/labs/test_labs/lab01/oslab00/Src/stm32f4xx_it.c
+          category: sourceC
+        - file: C:/RTOS/labs/test_labs/lab01/oslab00/Src/stm32f4xx_hal_msp.c
+          category: sourceC
+        - file: C:/RTOS/labs/test_labs/lab01/oslab00/Src/stm32f4xx_hal_timebase_tim.c
+          category: sourceC
+    - group: Drivers/STM32F4xx_HAL_Driver
+      files:
+        - file: C:/RTOS/labs/test_labs/lab01/oslab00/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c
+          category: sourceC
+        - file: C:/RTOS/labs/test_labs/lab01/oslab00/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c
+          category: sourceC
+        - file: C:/RTOS/labs/test_labs/lab01/oslab00/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c
+          category: sourceC
+        - file: C:/RTOS/labs/test_labs/lab01/oslab00/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c
+          category: sourceC
+        - file: C:/RTOS/labs/test_labs/lab01/oslab00/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c
+          category: sourceC
+        - file: C:/RTOS/labs/test_labs/lab01/oslab00/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c
+          category: sourceC
+        - file: C:/RTOS/labs/test_labs/lab01/oslab00/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c
+          category: sourceC
+        - file: C:/RTOS/labs/test_labs/lab01/oslab00/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c
+          category: sourceC
+        - file: C:/RTOS/labs/test_labs/lab01/oslab00/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c
+          category: sourceC
+        - file: C:/RTOS/labs/test_labs/lab01/oslab00/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c
+          category: sourceC
+        - file: C:/RTOS/labs/test_labs/lab01/oslab00/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c
+          category: sourceC
+        - file: C:/RTOS/labs/test_labs/lab01/oslab00/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c
+          category: sourceC
+        - file: C:/RTOS/labs/test_labs/lab01/oslab00/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c
+          category: sourceC
+        - file: C:/RTOS/labs/test_labs/lab01/oslab00/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c
+          category: sourceC
+        - file: C:/RTOS/labs/test_labs/lab01/oslab00/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c
+          category: sourceC
+        - file: C:/RTOS/labs/test_labs/lab01/oslab00/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c
+          category: sourceC
+    - group: Drivers/CMSIS
+      files:
+        - file: C:/RTOS/labs/test_labs/lab01/oslab00/Src/system_stm32f4xx.c
+          category: sourceC
